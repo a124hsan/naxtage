@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Nextag</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .ibad{
+            width: 200px;
+            height: 250px;
+        }
+        .text-center span{
+            color: coral;
+            font-weight: 24px;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+ <!--navigaton-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+  <div class="container">
+    <img src="logo.png.png" height="75px" width="100px" alt="">
+    <button class="navbar-toggler" type="button" 
+    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="brand.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          brand
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="brand.html?cat=Louis Vuitton">Louis Vuitton</a></li>
+          <li><a class="dropdown-item" href="brand.html?cat=Harber London">Harber London</a></li>
+          <li><a class="dropdown-item" href="brand.html?cat=Hentley">Hentley</a></li>
+          <li><a class="dropdown-item" href="brand.html?cat=Gucci">Gucci</a></li>
+          <li><a class="dropdown-item" href="brand.html?cat=Bellroy">Bellroy</a></li>
+        </ul>
+      </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparepage.html">Compare Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        
+    </div>
+  </div>
+</nav>
+
+
+
+
+    <section class="container my-5 pt-3">
+    <h1 class="text-center my-5 pt-5"> <span> Compare </span>page</h1>
+    <div class="container col-md-9">
+        <table class="table table-light table-hover">
+            <tr>
+                <th>Select-Product</th>
+                <td><select id="select1" class="form-control" onchange="compare1(this.value)">
+                    <option value="">---Select option---</option>
+                </select></td>
+                <td><select id="select2" class="form-control" onchange="compare2(this.value)">
+                    <option value="">---Select option---</option>
+                </select></td>
+            </tr>
+            <tr> 
+         <th>Product image</th> 
+            <td>
+         <img class="ibad" id="imge1" src="" alt="">
+        </td>
+            <td><img class="ibad" id="imge2" src="" alt=""></td>
+        </tr>
+        <tr>
+            <th>Product Price</th>
+            <td id="pric">N/A</td>
+            <td id="pric1">N/A</td>
+        </tr>
+        <tr>
+            <th>Product description</th>
+            <td id="desc">N/A</td>
+            <td id="desc1">N/A</td>
+        </tr>
+        <tr>
+            <th>Product brand</th>
+            <td id="brand">N/A</td>
+            <td id="brand1">N/A</td>
+        </tr>
+        </table>
+    </div>
+</section>
+
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+          <div class="footer-one col-lg-3 col-md-6 col-12">
+            <img src="logo.png.png" height="75px" width="100px" alt="">
+            <p>Nextag was an independent price comparison service website for products, travel, and education. 
+               Since 2000, the current business model has focused on comparison shopping.</p>
+          </div>
+          <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+            <h5 class="pb-2">Featured</h5>
+            <ul class="text-uppercase list-unstyled">
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Boys</a></li>
+              <li><a href="#">Girls</a></li>
+              <li><a href="#">Wallet</a></li>
+              <li><a href="#">Purse</a></li>
+              <li><a href="#">Bags</a></li>
+              
+              
+            </ul>
+          </div>
+          <div class="footer-one col-lg-3 col-md-6 col-12 md-3">
+            <h5 class="pb-2">Contact Us</h5>
+         <div>
+          <h6 class="text-uppercase">Address</h6>
+          <p>B-36 Noor Housing Project</p>
+         </div>
+         <div>
+          <h6 class="text-uppercase">Phone</h6>
+          <p>03196846229</p>
+         </div>
+         <div>
+          <h6 class="text-uppercase">Email</h6>
+          <p>a124hsan@gmail.com</p>
+         </div>
+          </div>
+          <div class="footer-one col-lg-3 col-md-6 col-12">
+            <h5 class="pb-2">Instagram</h5>
+        <div class="row">
+          <img class="img-fluid w-25 h-100 n-2" src="img/instagrm/img1.jpg" alt="">
+          <img class="img-fluid w-25 h-100 n-2" src="img/instagrm/img2.jpg" alt="">
+          <img class="img-fluid w-25 h-100 n-2" src="img/instagrm/img3.jpg" alt="">
+          <img class="img-fluid w-25 h-100 n-2" src="img/instagrm/img4.jpg" alt="">
+          <img class="img-fluid w-25 h-100 n-2 mt-3" src="img/instagrm/img5.jpg" alt="">
+        </div>
+          </div>
+        </div>
+        
+       
+      </footer>
+
+
+
+
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+<script src="data.js"></script>
+<script>
+
+    for( var i=0; i <= product.length; i++){
+    document.getElementById("select1").innerHTML+=`
+    <option value="${product[i].id}">${product[i].name}</option>
+    `;
+    document.getElementById("select2").innerHTML+=`
+    <option value="${product[i].id}">${product[i].name}</option>
+    `;
+};
+
+function compare1(a){
+
+     document.getElementById("imge1").src=product[a].image; 
+
+     document.getElementById("pric").innerHTML=product[a].price;
+
+     document.getElementById("desc").innerHTML=product[a].description;
+
+     document.getElementById("brand").innerHTML=product[a].brand;
+};
+function compare2(a){
+    document.getElementById("imge2").src=product[a].image;
+
+    document.getElementById("pric1").innerHTML=product[a].price;
+
+    document.getElementById("desc1").innerHTML=product[a].description;
+
+    document.getElementById("brand1").innerHTML=product[a].brand;
+}
+
+</script>
